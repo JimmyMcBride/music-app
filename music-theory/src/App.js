@@ -1,10 +1,14 @@
 import React from 'react';
 import './App.css';
+import Nav from './components/Nav'
+import { Scale } from "tonal"
+
 
 function App() {
   return (
     <div className="app">
-      <h1>🎶 Total Music Theory 🎶</h1>
+      <Nav />
+      { console.log(Scale.notes('D aeolian')) }
     </div>
   );
 }
